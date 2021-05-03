@@ -63,3 +63,13 @@ nextButton.addEventListener("click", incrementIndex);
 
 /* Wire up next to change by -1 */
 backButton.addEventListener("click", decrementIndex);
+   
+
+function swapImages() {
+  let imgs = document.querySelectorAll(".image-swap-container img");
+  
+  imgs[0].classList.toggle("active");
+  imgs[1].classList.toggle("active");
+}
+
+       
