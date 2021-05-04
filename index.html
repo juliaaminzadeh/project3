@@ -21,6 +21,19 @@
           <br />
           By: Julia Aminzadeh
         </h3>
+        <div class="dropdown">
+          <button class="dropbtn">Sources</button>
+          <div class="dropdown-content">
+            <a href="https://www.medicalnewstoday.com/articles/317956#timeline"
+              >Medical News Today</a
+            >
+            <a
+              href="https://www.verywellmind.com/harmful-chemicals-in-cigarettes-and-cigarette-smoke-2824715"
+              >Very Well Health</a
+            >
+            <a href="https://www.pexels.com/">Pexels</a>
+          </div>
+        </div>
         <img
           class="fill"
           src="./images/pexels-mithul-varshan-4830517.jpg"
@@ -117,7 +130,7 @@
         </p>
         <div class="center">
           <img class="static" src="./images/Screenshot (27).png" alt="" />
-          <img class="active" src="./images/giphy.gif" alt="" />
+          <img class="gif active" src="./images/giphy.gif" alt="" />
         </div>
       </div>
       <div class="overflow">
@@ -146,15 +159,37 @@
       </div>
       <div class="overflow">
         <h2><i>After 5 Years</i></h2>
-        <p class="block2">
+        <p class="block3">
           Cigarettes contain many known toxins that cause the arteries and blood
           vessels to narrow. These same toxins also increase the likelihood of
           developing blood clots. After 5 years without smoking, the body has
           healed itself enough for the arteries and blood vessels to begin to
           widen again. This widening means the blood is less likely to clot,
           lowering the risk of stroke. The risk of stroke will continue to
-          reduce over the next 10 years as the body heals more and more.
+          reduce over the next 10 years as the body heals more and more. Click
+          to see some of the most common toxins in cigarettes
         </p>
+        <button onclick="dropDown()" class="accordion">Cigarette Toxins</button>
+        <div class="panel">
+          <ul>
+            Ammonia
+          </ul>
+          <ul>
+            Carbon Monoxide
+          </ul>
+          <ul>
+            Benzene
+          </ul>
+          <ul>
+            Arsenic
+          </ul>
+          <ul>
+            Nicotine
+          </ul>
+          <ul>
+            Formaldehyde
+          </ul>
+        </div>
       </div>
       <div class="overflow">
         <h2><i>After 10 Years</i></h2>
@@ -167,12 +202,17 @@
       </div>
       <div class="overflow">
         <h2><i>After 15 Years</i></h2>
-        <p class="block2">
+        <p class="block3">
           After 15 years of having quit smoking, the likelihood of developing
           coronary heart disease is the equivalent of a non-smoker. Similarly,
           the risk of developing pancreatic cancer has reduced to the same level
           as a non-smoker.
         </p>
+        <iframe
+          src="https://ourworldindata.org/grapher/death-rates-smoking-age?country=~OWID_WRL"
+          loading="lazy"
+          style="width: 100%; height: 400px; border: 0px none"
+        ></iframe>
       </div>
       <div class="overflow">
         <h2><i>After 20 Years</i></h2>
