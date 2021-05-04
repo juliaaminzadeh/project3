@@ -3,6 +3,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: white;
   background-color: black;
+  overflow-y: auto;
 }
 h1 {
   text-align: center;
@@ -40,6 +41,11 @@ h3 {
   top: 20px;
   margin-top: 0;
 }
+.block3 {
+  text-align: left;
+  font-size: 25px;
+  margin-left: 2rem;
+}
 
 .move {
   float: right;
@@ -47,11 +53,64 @@ h3 {
   bottom: 500px;
   right: 20px;
 }
+.nose {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  left: 600px;
+  transform: scale(0.5);
+  transition: transform 300ms;
+  z-index: 4;
+}
+.nose:hover {
+  transform: scale(1.5);
+}
+.tongue {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  left: 500px;
+  transform: scale(0.5);
+  transition: transform 300ms;
+  z-index: 4;
+}
+.tongue:hover {
+  transform: scale(1.5);
+}
 
 div.image-swap-container {
   position: relative;
 }
 
+div.image-swap-container > img {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 300px;
+  align-content: center;
+  display: block;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+div.image-swap-container > img.active {
+  opacity: 1;
+}
+.static {
+  position: absolute;
+  display: block;
+  height: 481px;
+  width: 480px;
+}
+.static:hover {
+  opacity: 0;
+}
+.center {
+  position: absolute;
+  display: block;
+  left: 400px;
+}
 .move-right {
   float: right;
   position: relative;
@@ -60,6 +119,7 @@ div.image-swap-container {
   display: block;
   transform: scale(0.5);
   transition: transform 300ms;
+  z-index: 4;
 }
 .move-right:hover {
   transform: scale(1.5);
@@ -72,18 +132,6 @@ div.image-swap-container {
   background-position: center;
 }
 
-.move-over {
-  position: absolute;
-  display: block;
-  left: 675px;
-  bottom: 0px;
-  top: 15px;
-  opacity: 0;
-  transition: opacity 300ms;
-}
-.move-over.active {
-  opacity: 1;
-}
 .button {
   background-color: red;
   color: white;
@@ -93,6 +141,7 @@ div.image-swap-container {
   font-size: 15px;
   position: relative;
   left: 100px;
+  z-index: 4;
 }
 
 .slideshow {
@@ -124,6 +173,7 @@ div.image-swap-container {
   bottom: 0;
   height: 30px;
   margin: auto 0;
+  z-index: 4;
 }
 
 .slideshow > button#next {
@@ -174,4 +224,28 @@ div.image-swap-container {
   40% {
     transform: scale(1.5) rotate(-45deg);
   }
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  z-index: 3;
+}
+
+.active.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
