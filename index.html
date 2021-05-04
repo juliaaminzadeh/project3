@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="slideshow">
-      <div class="active">
+      <div class="active overflow">
         <h1>Quitting Cigarettes: Timeline</h1>
         <h3>
           Interested In Quitting? Stick Around To See What That Would Look Like!
@@ -27,7 +27,7 @@
           alt=""
         />
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 1 Hour</i></h2>
         <p class="block">
           In as little as 20 minutes after the last cigarette is smoked, the
@@ -56,7 +56,7 @@
           Click to see the difference <br />between healthy and smoking lungs
         </button>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 1 Day</i></h2>
         <p class="block3">
           Just 1 day after quitting smoking, the risk of heart attack begins to
@@ -71,7 +71,7 @@
           habits.
         </p>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 2 Days</i></h2>
         <p class="block3">
           Smoking damages the nerve endings responsible for the senses of smell
@@ -86,22 +86,22 @@
       </div>
       <div>
         <h2><i>After 3 Days</i></h2>
-        <p class="block2">
+        <p class="block3">
           3 days after quitting smoking, the nicotine levels in a person’s body
           are depleted. While it is healthier to have no nicotine in the body,
-          this initial depletion can cause nicotine withdrawal. Around 3 days
-          after quitting, most people will experience moodiness and
-          irritability, severe headaches, and cravings as the body readjusts.
+          this initial depletion can cause nicotine withdrawal.
         </p>
-        <button class="accordion">Symptons of Withdrawl</button>
+        <button onclick="dropDown()" class="accordion">
+          Symptons of Withdrawl
+        </button>
         <div class="panel">
           <p>
             Moodiness <br />
             Severe Headaches <br />
-            irritability <br />
+            Irritability <br />
             Nausea <br />
             Anxiety <br />
-            cravings <br />
+            Cravings <br />
             Insomnia
           </p>
         </div>
@@ -120,7 +120,7 @@
           <img class="active" src="./images/giphy.gif" alt="" />
         </div>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 9 Months</i></h2>
         <p class="block2">
           Nine months after quitting, the lungs have significantly healed
@@ -135,7 +135,7 @@
           <img class="move-right" src="./images/15548[1].jpg" alt="" />
         </div>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 1 Year</i></h2>
         <p class="block">
           One year after quitting smoking, a person’s risk for coronary heart
@@ -144,7 +144,7 @@
         </p>
         <div class="heart"></div>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 5 Years</i></h2>
         <p class="block2">
           Cigarettes contain many known toxins that cause the arteries and blood
@@ -156,7 +156,7 @@
           reduce over the next 10 years as the body heals more and more.
         </p>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 10 Years</i></h2>
         <p class="block2">
           After 10 years, a person’s chances of developing lung cancer and dying
@@ -165,7 +165,7 @@
           cancer has significantly reduced.
         </p>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 15 Years</i></h2>
         <p class="block2">
           After 15 years of having quit smoking, the likelihood of developing
@@ -174,7 +174,7 @@
           as a non-smoker.
         </p>
       </div>
-      <div>
+      <div class="overflow">
         <h2><i>After 20 Years</i></h2>
         <p class="block2">
           After 20 years, the risk of death from smoking-related causes,
@@ -182,6 +182,9 @@
           who has never smoked in their life. Also, the risk of developing
           pancreatic cancer has reduced to that of someone who has never smoked.
         </p>
+        <div>
+          <img class="move-right1" src="./images/no smoking.png" alt="" />
+        </div>
       </div>
       <button id="back">
         <i class="fas fa-arrow-left"></i>

@@ -3,7 +3,7 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: white;
   background-color: black;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 h1 {
   text-align: center;
@@ -124,12 +124,20 @@ div.image-swap-container > img.active {
 .move-right:hover {
   transform: scale(1.5);
 }
-.bg {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(https://blog.partnersforyourhealth.com/hubfs/healthy-lungs.jpg);
-  background-size: cover;
-  background-position: center;
+
+.move-right1 {
+  float: right;
+  position: relative;
+  bottom: 200px;
+  right: 300px;
+  display: block;
+  transform: scale(0.5);
+  transition: transform 300ms;
+  z-index: 4;
+}
+
+.move-right1:hover {
+  transform: scale(1.5);
 }
 
 .button {
@@ -231,15 +239,17 @@ div.image-swap-container > img.active {
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   border: none;
   outline: none;
   transition: 0.4s;
-  z-index: 3;
+  z-index: 5;
+  margin: 0;
 }
 
 .active.accordion:hover {
   background-color: #ccc;
+  z-index: 5;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -248,4 +258,17 @@ div.image-swap-container > img.active {
   background-color: white;
   display: none;
   overflow: hidden;
+  color: black;
+}
+
+.overflow {
+  overflow-y: hidden;
+}
+
+@media (max-width: 767px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
 }
