@@ -3,7 +3,6 @@ body {
   font-family: "Courier New", Courier, monospace;
   color: white;
   background-color: black;
-  overflow-y: scroll;
 }
 h1 {
   text-align: center;
@@ -169,6 +168,7 @@ div.image-swap-container > img.active {
   position: absolute;
   opacity: 0;
   transition: opacity 1s;
+  overflow-y: scroll;
 }
 .slideshow > div.active {
   opacity: 1;
@@ -239,8 +239,8 @@ div.image-swap-container > img.active {
   }
 }
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: red;
+  color: white;
   cursor: pointer;
   padding: 15px;
   width: 50%;
@@ -250,6 +250,7 @@ div.image-swap-container > img.active {
   transition: 0.4s;
   position: absolute;
   left: 325px;
+  font-family: "Courier New", Courier, monospace;
 }
 .active.accordion:hover {
   background-color: #ccc;
@@ -327,14 +328,81 @@ div.image-swap-container > img.active {
   body {
     max-width: 100%;
     overflow-x: hidden;
+    font-size: 20px;
   }
   .dropbtn {
-    background-color: red;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
     position: absolute;
-    right: 500px;
+    left: 150px;
+    display: block;
+    justify-content: center;
+  }
+  .block {
+    text-align: left;
+    font-size: 25px;
+    position: static;
+    top: 20px;
+    padding: 2px;
+    margin: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .button {
+    position: absolute;
+    left: 73px;
+  }
+  div.image-swap-container > img {
+    position: absolute;
+    left: 90px;
+    top: 50px;
+  }
+  .nose {
+    position: absolute;
+    left: 200px;
+  }
+  .tongue {
+    position: absolute;
+    left: 100px;
+  }
+  .center {
+    position: absolute;
+    left: 85px;
+  }
+  .block2 {
+    margin: 0;
+    padding: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .move-right {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+  }
+  .block3 {
+    margin: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .accordion {
+    position: absolute;
+    left: 100px;
+  }
+  .panel {
+    position: absolute;
+    left: 100px;
+  }
+  .move-right1 {
+    position: absolute;
+    right: 75px;
+    bottom: 20px;
+  }
+  .dropdown-content {
+    position: absolute;
+    left: 150px;
+  }
+  .heart {
+    margin-left: 0;
+    position: relative;
+    top: 100px;
   }
 }
